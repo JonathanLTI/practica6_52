@@ -1,0 +1,23 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* main {
+    background-color: antiquewhite;
+} */
+
+#pie {
+    color: aquamarine;
+}
+
+#encabezado {
+    color: aliceblue;
+}
+
+/* Otra forma, en lista */
+
+#pie,#encabezado {
+    background-color: azure;
+}

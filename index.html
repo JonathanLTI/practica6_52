@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas html</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h2>Formularios</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos Generales</legend>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                </div>
+                <div>
+                    <label for="edad">edad</label>
+                    <input type="number" name="edad" id="edad">
+                </div>
+
+                <div>
+                    <label for="color">color</label>
+                    <input type="color" name="cf" id="cf">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input type="password" name="clave" id="clave">
+                </div>
+
+                <div>
+                    <label for="info">comentarios</label>
+                    <textarea name="info" id="info" cols="15" rows="5"></textarea>
+                </div>
+
+                <div>
+                    <label for="metodo_pago">metodo_pago</label>
+                    <select name="metodo_pago" id="metodo_pago">
+                        <option value="1">Efectivo</option>
+                        <option value="2">Debito</option>
+                        <option value="3">Credito</option>
+                        <option value="4">Bitcoin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="metodo_pago_fav">metodo_pago_fav</label>
+                    <select name="metodo_pago_fav" id="metodo_pago_fav" multiple>
+                        <option value="1">Efectivo</option>
+                        <option value="2">Debito</option>
+                        <option value="3">Credito</option>
+                        <option value="4">Bitcoin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="vehiculo">vehiculo</label>
+                    <select name="vehiculo" id="vehiculo">
+                        <optgroup label="Camionetas">
+                            <option value="">toyota</option>
+                            <option value="">silverado</option>
+                        </optgroup>
+
+                        <optgroup label="Autos">
+                            <option value="">honda</option>
+                            <option value="">nissan</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="edo_civil">Casado?</label>
+                    <input type="checkbox" name="edo_civil" id="edo_civil">
+                </div>
+                <div>
+                    <label for="foto">Archivo foto empleado:</label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <input type="submit" value="Enviar">
+            </fieldset>
+
+
+        </form>
+
+        <h2>tablas html</h2>
+
+        <table border="1px">
+            <tr>
+                <td>actividad</td>
+                <td>lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+                <td>Sabado</td>
+                <td>Domingo</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1px">
+            <tr>
+                <th>Actividad</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+
+            <table border="1px">
+                <tr>
+                    <td>Actividad</td>
+                    <td>Lunes</td>
+                    <td>Martes</td>
+                    <td>Miercoles</td>
+                    <td>Jueves</td>
+                    <td>Viernes</td>
+                    <td>Sábado</td>
+                    <td>Domingo</td>
+                </tr>
+                <tr>
+                    <td>Ir al gimnasio</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Ir al gimnasio</td>
+                    <td colspan="5">X</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Salir con mi novia(o)</td>
+                    <td colspan="5">-</td>
+                    <td colspan="2">X</td>
+                </tr>
+                <tr>
+                    <td>Practicar fútbol</td>
+                    <td rowspan="2">X</td>
+                    <td rowspan="6">-</td>
+
+                </tr>
+                <tr>
+                    <td>Practicar basquet</td>
+                    <td colspan="7">-</td>
+                </tr>
+
+
+                <table border="1px">
+                    <thead>
+                        <tr>
+                            <th colspan="8">Mi itinerario</th>
+                        </tr>
+                        <th>Actividades</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</th>
+                        <th>Domingo</th>
+                    </thead>
+                    <tr>
+                        <tbody>
+                            <tr>
+                                <td>Practicar fútbol</td>
+                                <td rowspan="2">X</td>
+                                <td rowspan="6">-</td>
+
+                            </tr>
+                            <tr>
+                                <td>Practicar basquet</td>
+                                <td colspan="7">-</td>
+                            </tr>
+
+                            <table border="1px">
+                                <thead>
+                                    <tr>
+                                        <th colspan="8">Mi itinerario</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Actividad</th>
+                                        <th>Lunes</th>
+                                        <th>Martes</th>
+                                        <th>Miercoles</th>
+                                        <th>Jueves</th>
+                                        <th>Viernes</th>
+                                        <th>Sábado</th>
+                                        <th>Domingo</th>
+                                    </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="8">Elaborado por: </td>
+                            </tr>
+                        </tfoot>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </table>
+            </table>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>
